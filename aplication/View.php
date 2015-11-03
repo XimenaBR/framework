@@ -9,6 +9,11 @@ public function __construct(Request $peticion)
 	$this->_controlador = $peticion->getControlador();
 	$this->_metodo=$peticion->getMetodo();
 }
+/**
+ * MEtodo que redirecciona a las vistas
+ * @param type $vista 
+ * @return type
+ */
 	public function renderizar($vista)
 	{
 		$_layoutParams = array

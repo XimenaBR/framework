@@ -1,9 +1,14 @@
 <?php
 
-abstract class appController
+Abstract class appController
 {
-protected $_view;
 
+protected $_view;
+/**
+ * Función __Construct
+ * Instancia las variables de la clase PDO
+ * @return type
+ */
 	public function  __construct()
 	{
 		$this->_view = new View(new Request);

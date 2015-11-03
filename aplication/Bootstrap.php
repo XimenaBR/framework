@@ -2,6 +2,12 @@
 
 class Bootstrap
 {
+/**
+ * Función Run 
+ * Invoca a los controladores de la clase
+ * @param type Request $peticion 
+ * @return type
+ */
 	public static function run(Request $peticion)
 	{
 		$controller = $peticion-> getControlador().'controller';

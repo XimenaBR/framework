@@ -5,7 +5,10 @@ class Request
 	private $_controlador;
 	private $_metodo;
 	private $_argumentos;
-
+/**
+ * Metodo para sanitizar
+ * @return type
+ */
 	public function __construct()
 	{
 		if (isset($_GET['url'])) 
@@ -32,17 +35,26 @@ class Request
 			$this-> _argumentos = array();
 		}
 	}
-
+	/**
+	 * 
+	 * @return type
+	 */
 		public function getControlador()
 		{
 			return $this-> _controlador;
 		}
-
+/**
+ * PErmite obtener el valor del método
+ * @return type
+ */
 		public function getMetodo()
 		{
 			return $this-> _metodo;
 		}
-
+/**
+ * Ayuda a obtener los valores de los argumentos 
+ * @return type
+ */
 		public function getArgs()
 		{
 			return $this-> _argumentos;
